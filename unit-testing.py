@@ -42,3 +42,9 @@ class TestListManipulator(unittest.TestCase):
         check = ListManipulator(list)
         check = check.min()
         self.assertEqual(check, 1)
+        
+    def test_max(self):
+        list = [1, 2, 3, 4, 5]
+        check = ListManipulator(list)
+        check = check.max()
+        self.assertEqual(check, 5)
