@@ -30,3 +30,4 @@ class ListManipulator:
 
         for index in to_remove:
             self.list.pop(index)
+

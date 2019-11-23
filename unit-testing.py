@@ -36,4 +36,9 @@ class ListManipulator:
             self.list.pop(index)
 
 class TestListManipulator(unittest.TestCase):
-
+    def test_min(self):
+        #Create list values
+        list = [1, 2, 3, 4, 5]
+        check = ListManipulator(list)
+        check = check.min()
+        self.assertEqual(check, 1)
