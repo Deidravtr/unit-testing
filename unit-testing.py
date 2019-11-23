@@ -34,7 +34,8 @@ class ListManipulator:
 
         for index in to_remove:
             self.list.pop(index)
-
+        #Return the new list
+        return self.list
 class TestListManipulator(unittest.TestCase):
     def test_min(self):
         #Create list values
@@ -42,9 +43,13 @@ class TestListManipulator(unittest.TestCase):
         check = ListManipulator(list)
         check = check.min()
         self.assertEqual(check, 1)
-        
     def test_max(self):
         list = [1, 2, 3, 4, 5]
         check = ListManipulator(list)
         check = check.max()
         self.assertEqual(check, 5)
+    def test_remove(self):
+        list = [1, 2, 3, 4, 5]
+        new_list = ListManipulator(list)
+        new_list = new_list.remove(3)
+        self.assertEqual(new_list, [1, 2, 4, 5])
