@@ -61,5 +61,6 @@ class TestListManipulator(unittest.TestCase):
         new_list = new_list.remove(3)
         self.assertEqual(new_list, [1, 2, 4, 5])
 
-
+#unittest.main()
+unittest.main()
 #This can be found at https://github/com/Deidravtr/unit-testing
